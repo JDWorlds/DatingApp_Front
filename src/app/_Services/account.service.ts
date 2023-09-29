@@ -11,7 +11,6 @@ export class AccountService {
   private CurrentUserSource = new BehaviorSubject<User | null>(null);
   CurrentUser$ = this.CurrentUserSource.asObservable();
 
-
   constructor(private http: HttpClient){}
 
   login(model: any)
